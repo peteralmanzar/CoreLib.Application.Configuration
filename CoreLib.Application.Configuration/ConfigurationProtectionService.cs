@@ -50,7 +50,7 @@ namespace CoreLib.Application.Configuration
         }
 
         /// <summary>
-        /// Encrypt 
+        /// Encrypt configuration's connection strings section.
         /// </summary>
         public static void ProtectConnectionStrings()
         {
@@ -63,6 +63,9 @@ namespace CoreLib.Application.Configuration
             }
         }
 
+        /// <summary>
+        /// Decrypt configuration's connection strings section.
+        /// </summary>
         public static void UnprotectConnectionStrings()
         {
             var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
